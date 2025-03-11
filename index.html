@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astra Stones </title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="logo.png" alt="Astra Stones Logo" class="nav-logo"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jewelry.html">Jewelry</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li id="search-container">
+                    <input type="text" id="search" placeholder="Search Jewelry..." onkeyup="handleSearch(event)">
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Welcome Section with Slideshow -->
+    <section class="welcome-section">
+        <div class="slideshow-container">
+            <img src="s1.jpg" class="active" alt="Jewelry 1">
+            <img src="s2.jpg" alt="Jewelry 2">
+            <img src="s3.jpg" alt="Jewelry 3">
+        </div>
+        <div class="welcome-title">
+            <h1>Welcome to Astra Stones</h1>
+            <h4>Where Elegance Meets the Cosmos</h4>
+        </div>
+    </section>
+    <h1 class="about"><center>About Us</center></h1>
+    <p class="aboutstones">Astra Stones, a premier jewelry store located in the heart of San Roman Village, Corozal, was established in 2020. 
+        Specializing in exquisite and timeless pieces, Astra Stones offers a curated collection of fine jewelry, including gold, silver, gemstones, and custom designs. With a commitment to quality craftsmanship and exceptional customer service, Astra Stones has become a trusted destination for those seeking elegance and sophistication. Whether you're looking for a unique gift or a statement piece, Astra Stones brings a touch of luxury to every creation.</p>
+
+
+
+
+ <!-- Product Catalog -->
+ <h1 class="best">Best Sellers</h1>
+ <section id="catalog">
+     <div class="product" data-name="Gold Ring">
+         <img src="goldring.jpg" alt="Gold Ring">
+         <h3>Gold Ring</h3>
+         <p>Description:<br>
+            This elegant 14K gold ring is crafted with precision and sophistication, weighing 3 grams. Made from 58.3% pure gold, it combines durability with a luxurious finish, perfect for everyday wear or special occasions. Its timeless design and high-quality craftsmanship make it a versatile and cherished addition to any jewelry collection.</p>
+         <span>$250 BZD</span>
+         <button onclick="addToCart('Gold Ring', 250)">Add to Cart</button>
+     </div>
+        <div class="product" data-name="Silver Necklace">
+            <img src="Silver Necklace.jpg" alt="Silver Necklace">
+            <h3>Silver Necklace</h3>
+            <p>Description:<br>  
+                This stunning sterling silver necklace is crafted from 92.5% pure silver and weighs 50 grams. Its elegant design combines timeless sophistication with durability, making it a versatile piece for both casual and formal occasions. The high-quality craftsmanship ensures a luxurious finish, while the substantial weight adds a sense of premium value. Perfect for gifting or adding to your jewelry collection, this necklace is a classic statement of style and refinement.</p>
+            <span>$300 BZD</span>
+            <button onclick="addToCart('Silver Necklace', 300)">Add to Cart</button>
+        </div>
+        <div class="product" data-name="Diamond Ring">
+            <img src="greendiamondring.jpg" alt="Gold Diamond Ring">
+            <h3>Diamond Ring</h3>
+            <p>Description:<br>
+                This exquisite green diamond ring features a vibrant gemstone set in a sleek gold chassis. Priced at $500 BZD, it combines elegance and sophistication, making it a perfect statement piece for any occasion. The unique green diamond adds a touch of luxury, while the gold setting enhances its timeless appeal. Ideal for adding a pop of color and style to your jewelry collection.</p>
+            <span>$500 BZD</span>
+            <button onclick="addToCart('Diamond Ring', 500)">Add to Cart</button>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Astra Stones. All rights reserved.</p>
+    </footer>
+</body>
+</html>

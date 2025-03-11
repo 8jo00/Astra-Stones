@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry </title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="logo.png" alt="Astra Stones Logo" class="nav-logo"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jewelry.html">Jewelry</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li id="search-container">
+                    <input type="text" id="search" placeholder="Search Jewelry..." onkeyup="handleSearch(event)">
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Product Catalog -->
+    <section id="catalog">
+        <div class="product" data-name="Gold Ring">
+            <img src="goldring.jpg" alt="Gold Ring">
+            <h3>Gold Ring</h3>
+            <p>Description:<br>
+               This elegant 14K gold ring is crafted with precision and sophistication, weighing 3 grams. Made from 58.3% pure gold, it combines durability with a luxurious finish, perfect for everyday wear or special occasions. Its timeless design and high-quality craftsmanship make it a versatile and cherished addition to any jewelry collection.</p>
+            <span>$250 BZD</span>
+            <button onclick="addToCart('Gold Ring', 250)">Add to Cart</button>
+        </div>
+           <div class="product" data-name="Silver Necklace">
+               <img src="Silver Necklace.jpg" alt="Silver Necklace">
+               <h3>Silver Necklace</h3>
+               <p>Description:<br>  
+                   This stunning sterling silver necklace is crafted from 92.5% pure silver and weighs 50 grams. Its elegant design combines timeless sophistication with durability, making it a versatile piece for both casual and formal occasions. The high-quality craftsmanship ensures a luxurious finish, while the substantial weight adds a sense of premium value. Perfect for gifting or adding to your jewelry collection, this necklace is a classic statement of style and refinement.</p>
+               <span>$300 BZD</span>
+               <button onclick="addToCart('Silver Necklace', 300)">Add to Cart</button>
+           </div>
+           <div class="product" data-name="Diamond Ring">
+               <img src="greendiamondring.jpg" alt="Gold Diamond Ring">
+               <h3>Diamond Ring</h3>
+               <p> Description:<br>
+                This exquisite green diamond ring features a vibrant gemstone set in a sleek gold chassis. Priced at $500 BZD, it combines elegance and sophistication, making it a perfect statement piece for any occasion. The unique green diamond adds a touch of luxury, while the gold setting enhances its timeless appeal. Ideal for adding a pop of color and style to your jewelry collection.</p>
+               <span>$500 BZD</span>
+               <button onclick="addToCart('Diamond Ring', 500)">Add to Cart</button>
+           </div>
+        <div class="product" data-name="Sapphire Pendant">
+            <img src="Sapphire Pendant.jpg" alt="Sapphire Pendant">
+            <h3>Sapphire Pendant</h3>
+            <p>Description:<br>
+                A stunning sapphire pendant on a sleek silver chain, combining timeless elegance with modern simplicity. The vibrant sapphire stone takes center stage, while the polished silver chain adds a refined touch. Perfect for adding a hint of sophistication to any outfit.
+            </p>
+            <span>$350 BZD</span>
+            <button onclick="addToCart('Sapphire Pendant', 350)">Add to Cart</button>
+        </div>
+        <div class="product" data-name="Pearl Bracelet">
+            <img src="Pearl Bracelet.jpg" alt="Pearl Bracelet">
+            <h3>Pearl Bracelet</h3>
+            <p>Description:<br>
+                A classic pearl white bracelet, showcasing lustrous pearls that exude timeless elegance. Perfect for adding a touch of sophistication to any outfit, this bracelet is a versatile and refined accessory for both casual and formal occasions.</p>
+            <span>$200 BZD</span>
+            <button onclick="addToCart('Pearl Bracelet', 200)">Add to Cart</button>
+        </div>
+        <div class="product" data-name="Diamond Earrings">
+            <img src="Diamond Earrings.jpg" alt="Diamond Earrings">
+            <h3>Diamond Earrings</h3>
+            <p>Description:<br>
+                Diamond earrings are elegant and timeless accessories that feature diamonds set in various styles, such as studs, hoops, or drops. They add a touch of luxury and sparkle to any outfit, making them perfect for both everyday wear and special occasions.</p>
+            <span>$450 BZD</span>
+            <button onclick="addToCart('Diamond Earrings', 450)">Add to Cart</button>
+        </div>
+        <!-- Add more products as needed -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Astra Stones. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
